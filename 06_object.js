@@ -11,3 +11,4 @@ let whiteRabbit = {type: 'White', speak};
 let hungryRabbit = {type: 'Hungry', speak};
 whiteRabbit.speak('I am late!');
 hungryRabbit.speak('I would eat a carrot know!');
+speak.call(hungryRabbit, 'I ate too much!');
