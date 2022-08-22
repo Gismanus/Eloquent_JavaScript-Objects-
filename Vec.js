@@ -14,5 +14,7 @@ class Vec {
     }
 }
 // --> test
-let vector = new Vec(3, 4);
-console.log(vector.length);
+let vector1 = new Vec(3, 4);
+let vector2 = new Vec(3, 4);
+let vector3 = vector1.minus(vector2);
+console.log(vector3.length, vector3.x, vector3.y);
