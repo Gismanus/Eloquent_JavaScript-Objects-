@@ -42,7 +42,7 @@ class MatrixIterator {
     }
 }
 
-Matrix.prototype[Symbol.iterator] = function(){
+Matrix.prototype[Symbol.iterator] = function () {
     return new MatrixIterator(this);
 };
 // // TEST MATRIX
@@ -54,7 +54,7 @@ Matrix.prototype[Symbol.iterator] = function(){
 class SymmetricMatrix extends Matrix {
     constructor(size, element = (x, y) => undefined) {
         super(size, size, (x, y) => {
-            if (x<y) return element(y, x);
+            if (x < y) return element(y, x);
             else return element(x, y);
         });
     }
